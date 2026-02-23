@@ -1,0 +1,49 @@
+.camiseta-page{
+    padding: clamp(30px, 6vw, 60px) 20px;
+    text-align:center;
+}
+
+/* TITULO */
+.titulo{
+    font-family:'Sedgwick Ave',cursive;
+    font-size: clamp(38px, 7vw, 80px);
+    color:red;
+    text-shadow:0 0 25px red;
+    margin-bottom: clamp(10px, 3vw, 20px);
+}
+
+/* IMAGEM */
+.camiseta-img{
+    width: clamp(220px, 55vw, 420px);
+    max-width:90%;
+    margin-bottom: clamp(20px, 4vw, 30px);
+}
+
+/* PREÇO */
+.preco{
+    font-size: clamp(26px, 5vw, 40px);
+    color:red;
+    margin: clamp(10px, 3vw, 20px) 0;
+}
+
+/* TEXTO */
+.pag{
+    margin-bottom: clamp(10px, 3vw, 20px);
+    font-size: clamp(14px, 2.5vw, 18px);
+}
+
+/* BOTÃO PIX */
+.pix-btn{
+    background:red;
+    border:none;
+    padding: clamp(12px, 2.5vw, 16px) clamp(20px, 4vw, 30px);
+    font-size: clamp(16px, 3vw, 20px);
+    color:white;
+    cursor:pointer;
+    transition: .3s;
+}
+
+.pix-btn:hover{
+    box-shadow:0 0 20px red;
+    transform:scale(1.05);
+}

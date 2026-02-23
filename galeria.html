@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Galeria 3ºB</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&family=Urbanist:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="galeria.css">
+</head>
+
+<body>
+
+<section class="galeria">
+
+<h1 hrf="home.html">GALERIA 3ºB</h1>
+
+<!-- UPLOAD -->
+<div class="upload-box">
+  <input type="file" id="fotoInput" accept="image/*">
+  <input type="text" id="nomeInput" placeholder="Seu nome">
+  <button onclick="enviarFoto()">ENVIAR FOTO</button>
+</div>
+
+<!-- ORDENAÇÃO / MODERAÇÃO -->
+<div class="ordenacao">
+  <button onclick="carregarGaleria()">Recentes</button>
+  <button onclick="ordenarLikes()">Mais curtidas</button>
+  <button onclick="aprovarUltima()">Aprovar foto</button>
+</div>
+
+<!-- GRID -->
+<div class="grid" id="gridGaleria"></div>
+
+<a href="home.html" class="voltar">← Voltar</a>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

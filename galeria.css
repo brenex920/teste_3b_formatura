@@ -1,0 +1,112 @@
+/* GALERIA */
+.galeria h1{
+  font-family:'Sedgwick Ave Display';
+  font-size: clamp(36px,7vw,70px);
+  margin-top:40px;
+  text-shadow:0 0 15px #ff1b1b;
+}
+
+/* UPLOAD */
+.upload-box{
+  margin:30px auto;
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  justify-content:center;
+}
+
+.upload-box input{
+  padding:12px;
+  border:2px solid #ff1b1b;
+  background:#0b0b0b;
+  color:white;
+  border-radius:6px;
+}
+
+.upload-box button{
+  padding:12px 22px;
+  border:2px solid #ff1b1b;
+  background:none;
+  color:white;
+  cursor:pointer;
+  border-radius:6px;
+  transition:.3s;
+}
+
+.upload-box button:hover{
+  background:#ff1b1b;
+  box-shadow:0 0 15px #ff1b1b;
+}
+
+/* GRID */
+.grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+  padding:30px;
+}
+
+/* CARD FOTO */
+.foto-card{
+  background:#0b0b0b;
+  border:1px solid #222;
+  border-radius:10px;
+  overflow:hidden;
+  transition:.3s;
+  position:relative;
+}
+
+.foto-card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 0 20px rgba(255,0,0,0.4);
+}
+
+.foto-card img{
+  width:100%;
+  height:240px;
+  object-fit:cover;
+}
+
+.foto-nome{
+  padding:10px;
+  font-weight:700;
+}
+
+/* AÇÕES */
+.foto-acoes{
+  display:flex;
+  justify-content:space-between;
+  padding:10px;
+}
+
+.like-btn, .del-btn{
+  border:none;
+  background:none;
+  cursor:pointer;
+  font-size:18px;
+  color:white;
+  transition:.2s;
+}
+
+.like-btn:hover{
+  color:#ff1b1b;
+  transform:scale(1.2);
+}
+
+.del-btn:hover{
+  color:#ff4d4d;
+}
+
+/* BOTÕES ORDEM */
+.ordenacao{
+  margin:20px;
+}
+
+.ordenacao button{
+  margin:6px;
+  padding:8px 14px;
+  border:1px solid #ff1b1b;
+  background:none;
+  color:white;
+  cursor:pointer;
+}

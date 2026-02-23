@@ -1,0 +1,101 @@
+/* BASE */
+body {
+  background: #050505;
+  color: white;
+  font-family: 'Urbanist', sans-serif;
+  margin: 0;
+  text-align: center;
+}
+
+/* TITULO */
+.titulo {
+  font-family: 'Sedgwick Ave Display', cursive;
+  font-size: clamp(42px, 8vw, 100px);
+  margin-top: clamp(40px, 8vw, 80px);
+}
+
+.titulo span {
+  color: #ff1b1b;
+  text-shadow: 0 0 10px #ff1b1b, 0 0 25px #ff1b1b;
+}
+
+/* BOTÕES */
+.botoes {
+  margin: clamp(20px, 5vw, 40px);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+.btn {
+  display: inline-block;
+  padding: clamp(12px, 2vw, 18px) clamp(22px, 4vw, 40px);
+  border: 2px solid #ff1b1b;
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  transition: 0.3s;
+  font-size: clamp(14px, 2.5vw, 18px);
+}
+
+.btn:hover {
+  background: #ff1b1b;
+  box-shadow: 0 0 20px #ff1b1b;
+}
+
+/* MASCOTE */
+.mascote {
+  width: clamp(180px, 35vw, 320px);
+  margin-top: clamp(20px, 4vw, 40px);
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+/* CAMISETA */
+.camiseta-page h1 {
+  font-family: 'Sedgwick Ave Display';
+  font-size: clamp(36px, 7vw, 70px);
+  margin-top: clamp(30px, 6vw, 60px);
+}
+
+.camiseta-img {
+  width: clamp(220px, 60vw, 420px);
+  margin: 30px 0;
+}
+
+.info {
+  font-size: clamp(16px, 3vw, 22px);
+}
+
+.voltar {
+  display: block;
+  margin-top: 40px;
+  color: #ff1b1b;
+  text-decoration: none;
+}
+
+/* GALERIA */
+.galeria h1 {
+  font-family: 'Sedgwick Ave Display';
+  font-size: clamp(36px, 7vw, 70px);
+  margin-top: clamp(30px, 6vw, 60px);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: clamp(12px, 2vw, 20px);
+  padding: clamp(16px, 4vw, 40px);
+}
+
+.grid img {
+  width: 100%;
+  height: clamp(160px, 30vw, 260px);
+  object-fit: cover;
+  border-radius: 6px;
+}
